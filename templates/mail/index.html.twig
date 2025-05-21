@@ -1,4 +1,4 @@
-<p>Hallo {{contactPerson}},</p>
+<p>Hallo {{contact.contactPerson}},</p>
 <p>vielen Dank für deine Nachricht und dein Vertrauen in Deter Consulting.<br/>
     Wir haben deine Anfrage erhalten und schauen sie uns zeitnah an – in der Regel melden wir uns innerhalb von 24 Stunden bei dir zurück.
 </p>
@@ -6,12 +6,15 @@
     Wenn du schon vorab weitere Informationen teilen möchtest oder Fragen hast, erreichst du uns jederzeit direkt per E-Mail an <a href="mailto:info@deter-consulting.de">info@deter-consulting.de</a> oder telefonisch unter +49 4124 899 86 99.
 </p>
 <p>
-    Die folgenden Informationen würden uns Übermittelt:<br>
-    <b>Firma</b>: {{companyName}}<br>
-    <b>Kontaktperson</b>: {{contactPerson}}<br>
-    <b>E-Mail</b>: {{email}}<br>
-    <b>Telefon</b>: {{phone}}<br>
-    <b>Deine Herausforderung</b>:<br> {{message}}<br>
+    Die folgenden Informationen würden uns übermittelt:<br><br>
+    <b>Firma</b>: {{contact.companyName}}<br>
+    <b>Kontaktperson</b>: {{contact.contactPerson}}<br>
+    <b>E-Mail</b>: {{contact.email}}<br>
+    <b>Telefon</b>: {{contact.phone}}<br>
+    <b>Deine Herausforderung</b>:<br> {{contact.message}}<br>
+</p>
+<p>
+    Mit den besten Grüßen
 </p>
 
 <table cellpadding="0" cellspacing="0" border="0"
@@ -28,9 +31,7 @@
                                style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
                             <tbody>
                             <tr>
-                                <td style="text-align: center;"><img src="https://cdn.deter-consulting.de/mdeter.png"
-                                                                     role="presentation" width="130"
-                                                                     style="max-width: 128px; display: block;"></td>
+                                <td style="text-align: center;">&nbsp;</td>
                             </tr>
                             <tr>
                                 <td height="30" aria-label="Horizontal Spacer"></td>

@@ -601,6 +601,13 @@
         </div>
         {{ form_start(form) }}
             <div class="row">
+                <div class="col-md-12">
+                    {% if formSuccess %}
+                    <div class="alert alert-success" role="alert">
+                        Deine Nachricht wurde erfolgreich gesendet!
+                    </div>
+                    {% endif %}
+                </div>
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-12">
