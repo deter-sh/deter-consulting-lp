@@ -2,7 +2,7 @@
 if ($("#map-container").length) {
     function initialize() {
         var mapOptions = {
-            zoom: 10,
+            zoom: 18,
             scrollwheel: false,
             styles: [{
                 "featureType": "water",
