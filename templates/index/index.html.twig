@@ -25,6 +25,17 @@
     <!-- Customiser's Stylesheet -->
     <link rel="stylesheet" href="{{ asset('/asset/css/style.css') }}">
 
+    <meta property="og:type" content="business.business">
+    <meta property="og:title" content="Interims Management, das wirkt – Deter Consulting">
+    <meta property="og:url" content="https://interim.deter-consulting.de/">
+    <meta property="og:image" content="https://interim.deter-consulting.de/asset/images/share.jpg">
+    <meta property="og:description" content="Nicht irgendein Interimer. Sondern einer, der passt. Führung auf Zeit mit Substanz, Klarheit und Verantwortung.">
+    <meta property="business:contact_data:street_address" content="Große Deichstraße 31">
+    <meta property="business:contact_data:locality" content="Glückstadt">
+    <meta property="business:contact_data:region" content="">
+    <meta property="business:contact_data:postal_code" content="25348">
+    <meta property="business:contact_data:country_name" content="Germany">
+
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="90">
 
@@ -525,7 +536,7 @@
         <div class="row align-items-center pb-5">
             <div class="col-lg-6 {% if loop.index % 2 == 0 %}order-lg-1{% endif %}">
                 <div class="img-hvr">
-                    <img src="{{ post.image.file.url }}?w=450&h=300" class="mw-100" alt="">
+                    <img src="{{ post.image.file.url }}?w=540" class="mw-100" alt="">
                     <div class="date">
                         <h5>{{ post.date | date("d") }}</h5>
                         <h5>{{ post.date | date("m") }}</h5>
