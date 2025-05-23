@@ -47,6 +47,10 @@ final class IndexController extends AbstractController
             $form = $this->createForm(ContactForm::class);
         }
 
+        if ($form->isSubmitted() && !$form->isValid()) {
+            dump($form->getErrors());die();
+        }
+
 
 
         return $this->render('index/index.html.twig', [
